@@ -23,6 +23,7 @@ body {
 
 .header-text {
   text-align: center;
+  color: white;
 }
 
 .header-text h1 {
@@ -33,9 +34,7 @@ body {
 
 .header-text p {
   text-align: left;
-  color: white;
   margin-bottom: 0px;
-  /* text-align: center; */
 }
 
 /* --------- main Nav ---------------- */
@@ -50,7 +49,7 @@ body {
   flex: 2;
   border-radius: 40px;
   background-color: rgb(66, 41, 193);
-  margin-bottom: 20px;
+  margin: 20px 10px;
 }
 
 /* --------- First Column ---------------- */
@@ -59,12 +58,14 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin: 20px 10px;
 }
 
 .FAQ-container {
   flex: 1;
   border-radius: 40px;
   background-color: aquamarine;
+  margin-bottom: 10px;
 }
 
 .stoof-container {
@@ -79,20 +80,65 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin: 20px 10px;
 }
 
 .resources-container {
   flex: 3;
   border-radius: 40px;
+  margin-bottom: 10px;
   background-color: rgb(255, 127, 246);
 }
 
 .socials-container {
-  flex: 1;
+  height: 15%;
   border-radius: 40px;
   background-color: rgb(255, 157, 127);
 }
 
-h1 {
+/* --------- All the boxes ---------------- */
+
+.nav-text h1 {
   color: white;
+  font-size: calc((var(--h) / 3) * 2);
+  padding: 5px 15px;
+  align-self: flex-start;
+}
+
+.nav-text:not(.socials-container) {
+  transition-duration: 0.3s;
+}
+
+.nav-text:hover:not(.socials-container) {
+  transform: scale(0.9);
+}
+
+.nav-text h2 {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  visibility: hidden;
+}
+
+.nav-text:hover h2 {
+  visibility: visible;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+i {
+  color: white;
+}
+
+.fa-brands i {
+  color: white;
+}
+
+.fa-brands i:hover {
+  color: rgb(214, 162, 248);
 }
