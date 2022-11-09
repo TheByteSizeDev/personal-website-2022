@@ -48,7 +48,8 @@ body {
 .about-container {
   flex: 2;
   border-radius: 40px;
-  background-color: rgb(66, 41, 193);
+  /* background-color: rgb(66, 41, 193); */
+  background-color: #7f00ff;
   margin: 20px 10px;
 }
 
@@ -64,7 +65,7 @@ body {
 .FAQ-container {
   flex: 1;
   border-radius: 40px;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 212, 0.904);
   margin-bottom: 10px;
 }
 
@@ -131,6 +132,8 @@ body {
   align-items: center;
 }
 
+/* --------- Icon Styling ---------------- */
+
 i {
   color: white;
 }
@@ -141,4 +144,9 @@ i {
 
 .fa-brands i:hover {
   color: rgb(214, 162, 248);
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
