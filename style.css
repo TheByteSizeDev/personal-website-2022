@@ -3,11 +3,11 @@ body {
   overflow: hidden;
 }
 
-.main-container {
+/* .main-container {
   display: flex;
   margin: 0px;
   height: 100vh;
-}
+} */
 
 /* --------- Header Container ---------------- */
 
@@ -73,6 +73,7 @@ body {
   flex: 1;
   border-radius: 40px;
   background-color: rgb(255, 185, 127);
+  overflow: hidden;
 }
 
 /* --------- Second Column ---------------- */
