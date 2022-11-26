@@ -3,12 +3,6 @@ body {
   overflow: hidden;
 }
 
-/* .main-container {
-  display: flex;
-  margin: 0px;
-  height: 100vh;
-} */
-
 /* --------- Header Container ---------------- */
 
 .header-container {
@@ -150,4 +144,45 @@ i {
 a {
   color: #ffffff;
   text-decoration: none;
+}
+
+/* --------- Small Screens ---------------- */
+
+@media (max-width: 650px) {
+  body {
+    overflow: auto;
+  }
+  .main-nav {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container {
+    margin: 0px;
+  }
+
+  .stack-1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+  }
+  .FAQ-container {
+    margin-bottom: 0px;
+    border-radius: 50vh;
+    margin-right: 5px;
+  }
+  .stoof-container {
+    border-radius: 50vh;
+    margin-left: 5px;
+  }
+  .circle-text {
+    text-align: center;
+  }
+
+  .stack-2 {
+    margin: 0px;
+  }
+  .socials-container {
+    height: auto;
+  }
 }
